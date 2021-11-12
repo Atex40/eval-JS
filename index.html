@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <title>Dice Game</title>
+    <meta name="description" content="2 Players Dice Game. It's free, feels free to try it !">
+    <meta name="keywords" content="Dice game, game, 2 players, dice">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Dice Game</h1>
+    </header>
+
+    <main>
+        <section class="player player--0 player--active">
+            <div class="player0">
+                <h1 class="name" id="name-0">Player 1</h1>
+                <p class="score" id="roundP0">0</p>
+                <div class="current">
+                    <p class="current-label">Total</p>
+                    <p class="current-score" id="globalP0">0</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="player player--1">
+            <div class="player1">
+                <h1 class="name" id="name-1">Player 2</h1>
+                <p class="score" id="roundP1">0</p>
+                <div class="current">
+                    <p class="current-label">Total</p>
+                    <p class="current-score" id="globalP1">0</p>
+                </div>
+            </div>
+        </section>
+
+        <img src="Images\dice-5.png" alt="dice" class="dice">
+        
+
+        <div class="win">
+            <div hidden id="infoW">
+                <h1 class="winnerName">WINNER :</h1>
+                <p id="winner">ysqs</p>
+            </div>
+        </div>
+
+        <button class="btn btnRoll" id="dice">Roll</button>       
+        <button class="btn btnHold" id="hold">Hold</button>
+        <button class="btn btnNew" id="btnNew">New Game</button>
+
+    </main> 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

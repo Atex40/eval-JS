@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  background-color: #2f2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5rem;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    background-color: rgba(253, 253, 253, 0.836);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+main {
+  position: relative;
+  width: 100rem;
+  height: 60rem;
+  background-color: rgba(207, 207, 207, 0.877);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+}
+
+.player {
+  flex: 50%;
+  padding: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  color: #535050;
+  position: relative;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  font-size: 6rem;
+  color: #535050;
+  margin: 35px;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.player--active .name {
+  font-weight: 700;
+  color: #000000;
+}
+.player--active .score {
+  font-weight: 400;
+}
+.player--active .current {
+  opacity: 1;
+}
+
+.current {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #636363;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #fff;
+  width: 79%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.current-label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #ddd;
+}
+
+.current-score {
+  font-size: 3.5rem;
+}
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 16.5rem;
+    transform: translateX(-50%);
+    height: 10rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+  }
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.7rem 2.5rem;
+}
+
+.btnNew {
+  top: 4rem;
+}
+.btnRoll {
+  top: 39.3rem;
+}
+.btnHold {
+  top: 46.1rem;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+}
+
+.btn:hover {
+    color: rgba(148, 83, 71, 0.507)
+}
+
+.win {
+    z-index: 4;
+    position: absolute;
+    left: 50%;
+    top: 10rem;
+    transform: translateX(-50%);
+    height: 10rem;
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+
+}
+
+.winnerName {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top : 5rem;
+
+  font-size: 4rem;
+  color: rgb(255, 104, 104);
+}
+
+#winner {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top : 19rem;
+
+  font-size: 6rem;
+  color: rgb(255, 104, 104);
+}
